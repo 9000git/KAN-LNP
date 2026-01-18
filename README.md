@@ -110,28 +110,6 @@ enable_optuna = True     # Enable Optuna optimization
 n_trials = 500           # Number of optimization trials
 ```
 
-## Project Structure
-
-```
-.
-├── README.md                    # This file
-├── requirements.txt             # Python dependencies
-├── kan_featsel.py              # Main KAN model with feature selection
-├── input_data.xlsx             # Input dataset (molecular descriptors + labels)
-├── nami.xlsx                   # Fixed features dataset
-├── fig_1.jpg                   # Framework architecture diagram
-└── output/                     # Results directory (auto-generated)
-    ├── final_result.txt        # Final model performance and formula
-    ├── formula.pickle          # Serialized symbolic formula
-    ├── prediction_plot.png     # Actual vs predicted plot
-    ├── best_params.txt         # Best hyperparameters
-    ├── optuna_log.txt          # Optimization history
-    ├── featsel_full/           # Feature selection results
-    ├── cv_splits/              # Cross-validation fold data
-    ├── cv_formulas/            # Formulas from each CV fold
-    └── trial_results/          # Individual trial results
-```
-
 ## Methodology
 
 ### Feature Selection Pipeline
